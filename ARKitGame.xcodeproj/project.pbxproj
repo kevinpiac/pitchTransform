@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		B181F32B1F27167500141B95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B181F32A1F27167500141B95 /* AppDelegate.swift */; };
-		B181F32D1F27167500141B95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B181F32C1F27167500141B95 /* ViewController.swift */; };
+		B181F32D1F27167500141B95 /* RecordSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B181F32C1F27167500141B95 /* RecordSoundsViewController.swift */; };
 		B181F3301F27167500141B95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B181F32E1F27167500141B95 /* Main.storyboard */; };
 		B181F3321F27167500141B95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B181F3311F27167500141B95 /* Assets.xcassets */; };
 		B181F3351F27167500141B95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B181F3331F27167500141B95 /* LaunchScreen.storyboard */; };
+		B1CB092A1F27E8EF00233E17 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CB09281F27E8EF00233E17 /* PlaySoundsViewController.swift */; };
+		B1CB092B1F27E8EF00233E17 /* PlaySoundsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1CB09291F27E8EF00233E17 /* PlaySoundsViewController.xib */; };
+		B1CB092D1F283D1500233E17 /* PlaySoundsViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CB092C1F283D1500233E17 /* PlaySoundsViewController+Audio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B181F3271F27167500141B95 /* ARKitGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B181F32A1F27167500141B95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B181F32C1F27167500141B95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B181F32C1F27167500141B95 /* RecordSoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundsViewController.swift; sourceTree = "<group>"; };
 		B181F32F1F27167500141B95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B181F3311F27167500141B95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B181F3341F27167500141B95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B181F3361F27167500141B95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1CB09281F27E8EF00233E17 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
+		B1CB09291F27E8EF00233E17 /* PlaySoundsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaySoundsViewController.xib; sourceTree = "<group>"; };
+		B1CB092C1F283D1500233E17 /* PlaySoundsViewController+Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlaySoundsViewController+Audio.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				B181F32A1F27167500141B95 /* AppDelegate.swift */,
-				B181F32C1F27167500141B95 /* ViewController.swift */,
+				B181F32C1F27167500141B95 /* RecordSoundsViewController.swift */,
+				B1CB09281F27E8EF00233E17 /* PlaySoundsViewController.swift */,
+				B1CB092C1F283D1500233E17 /* PlaySoundsViewController+Audio.swift */,
+				B1CB09291F27E8EF00233E17 /* PlaySoundsViewController.xib */,
 				B181F32E1F27167500141B95 /* Main.storyboard */,
 				B181F3311F27167500141B95 /* Assets.xcassets */,
 				B181F3331F27167500141B95 /* LaunchScreen.storyboard */,
@@ -90,6 +99,9 @@
 		B181F31F1F27167500141B95 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					mytag,
+				);
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Kevin Piacentini";
@@ -126,6 +138,7 @@
 			files = (
 				B181F3351F27167500141B95 /* LaunchScreen.storyboard in Resources */,
 				B181F3321F27167500141B95 /* Assets.xcassets in Resources */,
+				B1CB092B1F27E8EF00233E17 /* PlaySoundsViewController.xib in Resources */,
 				B181F3301F27167500141B95 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B181F32D1F27167500141B95 /* ViewController.swift in Sources */,
+				B181F32D1F27167500141B95 /* RecordSoundsViewController.swift in Sources */,
+				B1CB092D1F283D1500233E17 /* PlaySoundsViewController+Audio.swift in Sources */,
+				B1CB092A1F27E8EF00233E17 /* PlaySoundsViewController.swift in Sources */,
 				B181F32B1F27167500141B95 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,8 +278,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E4EA7753RM;
 				INFOPLIST_FILE = ARKitGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kevinpiacentini.ARKitGame.ARKitGame;
+				PRODUCT_BUNDLE_IDENTIFIER = kevinpiacentini.ARKitGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -276,8 +292,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E4EA7753RM;
 				INFOPLIST_FILE = ARKitGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kevinpiacentini.ARKitGame.ARKitGame;
+				PRODUCT_BUNDLE_IDENTIFIER = kevinpiacentini.ARKitGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -302,6 +319,7 @@
 				B181F33B1F27167500141B95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
